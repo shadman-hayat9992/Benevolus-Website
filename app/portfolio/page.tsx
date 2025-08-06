@@ -114,11 +114,6 @@ export default function PortfolioPage() {
     },
   ]
 
-  const router = useRouter()
-
-  const navigateToContact = () => {
-    router.push("/contact#contact-form")
-  }
 
   const filteredProjects =
     selectedCategory === "All" ? projects : projects.filter((project) => project.category === selectedCategory)
@@ -182,7 +177,7 @@ export default function PortfolioPage() {
             Explore our latest projects and see how we've helped businesses transform their online presence with
             stunning, functional websites.
           </p>
-          <div className="flex flex-wrap justify-center gap-2">
+          {/* <div className="flex flex-wrap justify-center gap-2">
             {categories.map((category) => (
               <Button
                 key={category}
@@ -198,12 +193,12 @@ export default function PortfolioPage() {
                 {category}
               </Button>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 
       {/* Portfolio Grid */}
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredProjects.map((project, index) => (
@@ -257,7 +252,7 @@ export default function PortfolioPage() {
             </div>
           )}
         </div>
-      </section>
+      </section> */}
 
       {/* Project Categories Deep Dive */}
       <section className="py-20 bg-gray-50">
@@ -340,7 +335,7 @@ export default function PortfolioPage() {
                   "Secure Messaging",
                 ],
                 icon: "🏥",
-                color: "red",
+                color: "blue",
               },
               {
                 industry: "Education & Training",
@@ -354,7 +349,7 @@ export default function PortfolioPage() {
                   "Certificates",
                 ],
                 icon: "📚",
-                color: "indigo",
+                color: "purple",
               },
             ].map((category) => (
               <Card
@@ -367,7 +362,7 @@ export default function PortfolioPage() {
                   >
                     <span className="text-2xl">{category.icon}</span>
                   </div>
-                  <CardTitle className="text-center group-hover:text-blue-600 transition-colors">
+                  <CardTitle className="text-center group-hover:text-blue-400 transition-colors">
                     {category.industry}
                   </CardTitle>
                   <CardDescription className="text-center">{category.description}</CardDescription>

@@ -425,9 +425,11 @@ export default function ContactPage() {
                             </div>
                           </div>
                           <div className="space-y-2">
-                            <div className="flex justify-between">
-                              <span className="text-sm font-medium text-gray-900">Timeline:</span>
-                              <span className="text-sm text-blue-600">{project.timeline}</span>
+                            <div className="flex justify-end">
+                              <div className="text-right">
+                                <span className="text-sm font-medium text-gray-900">Timeline: </span>
+                                <span className="text-sm text-blue-600">{project.timeline}</span>
+                              </div>
                             </div>
                             <div className="flex justify-between">
                               <span className="text-sm font-bold text-green-600">{project.price}</span>

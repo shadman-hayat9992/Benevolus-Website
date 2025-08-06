@@ -373,7 +373,7 @@ export default function ServicesPage() {
                       {tech.technologies.map((technology) => (
                         <span
                           key={technology}
-                          className={`px-3 py-1 bg-${tech.color}-50 text-${tech.color}-700 rounded-full text-sm font-medium`}
+                          className={`px-3 py-1 bg-${tech.color}-100 text-${tech.color}-600 rounded-full text-sm font-medium`}
                         >
                           {technology}
                         </span>
@@ -657,7 +657,7 @@ export default function ServicesPage() {
                           navigateToContact()
                         }}
                       >
-                        Get Free Consultation
+                        Start Your Project
                         <ArrowRight className="ml-2 w-5 h-5" />
                       </Button>
                       <Button

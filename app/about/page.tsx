@@ -1,6 +1,5 @@
 "use client"
 
-import { useState } from "react"
 import { CheckCircle, Users, Award, Clock, Heart, Target, Lightbulb, Rocket, ArrowRight } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -8,10 +7,8 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { AnimatedCounter } from "@/components/animated-counter"
 import { useRouter } from "next/navigation"
-import Link from "next/link"
 
 export default function AboutPage() {
-  const [activeTeamMember, setActiveTeamMember] = useState(0)
   const router = useRouter()
 
   const teamMembers = [
@@ -88,32 +85,6 @@ export default function AboutPage() {
     },
   ]
 
-  const milestones = [
-    {
-      year: "2022",
-      event: "Benevolus Founded",
-      description: "Started with a vision to create innovative tech solutions",
-    },
-    {
-      year: "2023",
-      event: "First 5 Projects",
-      description: "Reached our first major milestone with happy clients",
-    },
-    {
-      year: "2024",
-      event: "10+ Projects",
-      description: "Celebrated completing over 10 successful projects",
-    },
-    {
-      year: "2025",
-      event: "Award Recognition",
-      description: "Received 'Best Tech Innovation' award from Tech Excellence",
-    },
-  ]
-
-  const navigateToContact = () => {
-    router.push("/contact#contact-form")
-  }
 
   return (
     <div className="min-h-screen bg-white">
@@ -221,7 +192,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section */}
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
@@ -259,7 +230,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Company Timeline */}
       <section className="py-20 bg-gray-50">

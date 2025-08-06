@@ -17,19 +17,19 @@ export default function HomePage() {
   const testimonials = [
     {
       text: "Benevolus transformed our online presence completely. The new website not only looks amazing but has increased our leads by 300%. Highly recommended!",
-      author: "Sarah Johnson",
+      author: "Sandeep Kumar",
       role: "CEO, TechStart Inc.",
       rating: 5,
     },
     {
       text: "Professional, creative, and delivered on time. Our e-commerce site has never performed better. The team really understands modern web design.",
-      author: "Mike Chen",
+      author: "Sunder Raju",
       role: "Founder, StyleHub",
       rating: 5,
     },
     {
       text: "Exceptional service from start to finish. They listened to our needs and created exactly what we envisioned. Our conversion rate doubled!",
-      author: "Emily Rodriguez",
+      author: "Mehra Malik",
       role: "Marketing Director, GrowthCo",
       rating: 5,
     },
@@ -508,10 +508,10 @@ export default function HomePage() {
 
                 <div className="space-y-4">
                   {[
-                    { metric: "On-Time Delivery", percentage: 98, color: "green" },
+                    { metric: "On-Time Delivery", percentage: 98, color: "blue" },
                     { metric: "Client Satisfaction", percentage: 100, color: "blue" },
-                    { metric: "Budget Adherence", percentage: 95, color: "purple" },
-                    { metric: "Performance Goals Met", percentage: 97, color: "orange" },
+                    { metric: "Budget Adherence", percentage: 95, color: "blue" },
+                    { metric: "Performance Goals Met", percentage: 97, color: "blue" },
                   ].map((stat) => (
                     <div key={stat.metric} className="space-y-2">
                       <div className="flex justify-between items-center">
@@ -520,7 +520,7 @@ export default function HomePage() {
                       </div>
                       <div className="w-full bg-gray-200 rounded-full h-2">
                         <div
-                          className={`bg-gradient-to-r from-${stat.color}-400 to-${stat.color}-600 h-2 rounded-full transition-all duration-1000 ease-out`}
+                          className={`bg-gradient-to-r from-${stat.color}-600 to-${stat.color}-400 h-2 rounded-full transition-all duration-1000 ease-out`}
                           style={{ width: `${stat.percentage}%` }}
                         ></div>
                       </div>
